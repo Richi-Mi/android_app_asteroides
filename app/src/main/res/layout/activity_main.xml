@@ -24,24 +24,29 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_botones"
+        android:padding="@dimen/margen_botones"
         android:text="@string/Configurar" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/margen_botones"
         android:text="@string/AcercaDe" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/margen_botones"
         android:text="@string/Salir" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="@dimen/margen_botones"
         android:text="@string/Jugar" />
 
 </LinearLayout>

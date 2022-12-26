@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">Asteroides</string>
 
     <string name="Asteroides"> Asteroides </string>
@@ -6,4 +7,5 @@
     <string name="Configurar"> Configurar </string>
     <string name="AcercaDe"> Acerca De </string>
     <string name="Salir"> Salir </string>
+
 </resources>
