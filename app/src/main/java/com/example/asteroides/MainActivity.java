@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         Resources res = getResources();
 
         Drawable drawable = res.getDrawable(android.R.drawable.alert_dark_frame);
-        Drawable icon     = res.getDrawable( R.drawable.ic_launcher_foreground );
         String titulo     = res.getString( R.string.Asteroides );
         int color         = res.getColor( R.color.black );
         float fontSize    = res.getDimension( R.dimen.tamaño_fuente );
