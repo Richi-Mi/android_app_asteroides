@@ -27,6 +27,7 @@
     <Button
         android:id="@+id/button3"
         style="@style/estilo_boton"
+        android:onClick="lanzarAcercaDe"
         android:text="@string/AcercaDe" />
 
     <Button

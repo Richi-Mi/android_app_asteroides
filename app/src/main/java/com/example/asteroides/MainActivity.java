@@ -3,9 +3,11 @@ package com.example.asteroides;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView( R.layout.activity_main_constraint );
+        setContentView( R.layout.activity_main );
 
         // Accediendo a los valores de los recursos de la app en la carpeta Res.
         Resources res = getResources();
@@ -24,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
         float fontSize    = res.getDimension( R.dimen.tamaño_fuente );
         boolean limit     = res.getBoolean( R.bool.limite );
         String[] dias     = res.getStringArray( R.array.dias_semana );
+    }
+    public void lanzarAcercaDe( View view ) {
+        Intent i = new Intent( this, AcercaDe.class );
+        startActivity( i );
     }
 
 }
