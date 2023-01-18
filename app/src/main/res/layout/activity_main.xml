@@ -20,8 +20,9 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_configurar"
         style="@style/estilo_boton"
+        android:onClick="lanzarPreferencias"
         android:text="@string/Configurar" />
 
     <Button
@@ -31,13 +32,14 @@
         android:text="@string/AcercaDe" />
 
     <Button
-        android:id="@+id/button4"
-        style="@style/estilo_boton.alternativo"
-        android:text="@string/Salir" />
-
-    <Button
         android:id="@+id/button"
         style="@style/estilo_boton"
         android:text="@string/Jugar" />
+
+    <Button
+        android:id="@+id/btn_salir"
+        style="@style/estilo_boton.alternativo"
+        android:onClick="salirApp"
+        android:text="@string/Salir" />
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.asteroides;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -7,6 +8,8 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,5 +34,33 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent( this, AcercaDe.class );
         startActivity( i );
     }
+    public void lanzarPreferencias( View view ) {
+        Intent i = new Intent( this, PreferenciasActivity.class );
+        startActivity( i );
+    }
+    public void salirApp( View view ) {
+        finish(); // Metodo para cerrar la app, es equivalente al metodo de retorno.
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu( Menu menu ) {
+        getMenuInflater().inflate( R.menu.menu_main, menu );
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected( MenuItem item ) {
+        int id = item.getItemId();
+
+        if ( id == R.id.action_settings ) {
+            lanzarPreferencias( null );
+            return true;
+        }
+        if ( id == R.id.acercaDe ) {
+            lanzarAcercaDe( null );
+            return true;
+        }
+
+        return super.onOptionsItemSelected( item );
+    }
 }

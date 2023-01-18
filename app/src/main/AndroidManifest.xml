@@ -28,6 +28,9 @@
             android:name=".AcercaDe"
             android:label="@string/AcercaDe"
             android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity
+            android:name=".PreferenciasActivity"
+            android:label="@string/Preferencias" />
     </application>
 
 </manifest>

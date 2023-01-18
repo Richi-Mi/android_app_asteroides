@@ -53,12 +53,13 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/btn_salir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:onClick="salirApp"
                 android:padding="@dimen/margen_botones"
                 android:text="@string/Salir" />
 

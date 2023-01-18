@@ -7,17 +7,9 @@
     <string name="Configurar"> Configurar </string>
     <string name="AcercaDe"> Acerca De </string>
     <string name="Salir"> Salir </string>
+    <string name="Preferencias"> Preferencias </string>
+    <string name="buscar"> Buscar </string>
 
     <bool name="limite"> true </bool>
-
-    <string-array name="dias_semana">
-        <item> lunes </item>
-        <item> Martes </item>
-        <item> Miercoles </item>
-        <item> Jueves </item>
-        <item> Viernes </item>
-        <item> Sabado </item>
-        <item> Domingo </item>
-    </string-array>
 
 </resources>
