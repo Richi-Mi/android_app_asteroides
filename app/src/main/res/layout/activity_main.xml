@@ -42,7 +42,7 @@
         style="@style/estilo_boton.alternativo"
         android:onClick="salirApp"
         android:text="@string/Salir"
-        android:textColor="#FF7AA7"
+        android:textColor="#FF6096"
         android:textStyle="bold" />
 
 </LinearLayout>
