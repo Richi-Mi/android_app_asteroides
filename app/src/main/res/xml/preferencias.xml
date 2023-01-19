@@ -2,24 +2,47 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="preferencias_principal">
 
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="musica"
-        android:summary="Se reproduce musica de fondo."
-        android:title="Reproducir Musica" />
-    <ListPreference
-        android:defaultValue="0"
-        android:entries="@array/tiposGraficos"
-        android:entryValues="@array/tiposGraficosValores"
-        android:key="graficos"
-        android:summary="Se escoge la representación de gráficos."
-        android:title="Tipo de Graficos" />
-    <EditTextPreference
-        android:defaultValue="3"
-        android:inputType="number"
-        android:key="fragmentos"
-        android:selectAllOnFocus="true"
-        android:singleLine="true"
-        android:summary="En cuantos trozos se divide un asteroide"
-        android:title="Numero de Fragmentos" />
+    <PreferenceCategory android:title="General">
+
+        <EditTextPreference
+            android:defaultValue="3"
+            android:inputType="number"
+            android:key="fragmentos"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="En cuantos trozos se divide un asteroide"
+            android:title="Numero de Fragmentos" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/tiposGraficos"
+            android:entryValues="@array/tiposGraficosValores"
+            android:key="graficos"
+            android:summary="Se escoge la representación de gráficos."
+            android:title="Tipo de Graficos" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="musica"
+            android:summary="Se reproduce musica de fondo."
+            android:title="Reproducir Musica" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Modo Multijugador">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="multijugador"
+            android:title="Activar Multijugador" />
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:inputType="number"
+            android:key="jugadores"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Maximo de Jugadores" />
+        <ListPreference
+            android:defaultValue="10"
+            android:entries="@array/tiposConexion"
+            android:entryValues="@array/tiposConexionValores"
+            android:key="tiposconexion"
+            android:title="Tipo de Conexión" />
+    </PreferenceCategory>
 </PreferenceScreen>

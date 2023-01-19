@@ -30,14 +30,17 @@ public class MainActivity extends AppCompatActivity {
         boolean limit     = res.getBoolean( R.bool.limite );
         String[] dias     = res.getStringArray( R.array.dias_semana );
     }
+
     public void lanzarAcercaDe( View view ) {
         Intent i = new Intent( this, AcercaDe.class );
         startActivity( i );
     }
+
     public void lanzarPreferencias( View view ) {
         Intent i = new Intent( this, PreferenciasActivity.class );
         startActivity( i );
     }
+
     public void salirApp( View view ) {
         finish(); // Metodo para cerrar la app, es equivalente al metodo de retorno.
     }
