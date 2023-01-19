@@ -20,7 +20,7 @@
             android:summary="Se escoge la representación de gráficos."
             android:title="Tipo de Graficos" />
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="musica"
             android:summary="Se reproduce musica de fondo."
             android:title="Reproducir Musica" />
@@ -32,14 +32,14 @@
             android:key="multijugador"
             android:title="Activar Multijugador" />
         <EditTextPreference
-            android:defaultValue="Default value"
+            android:defaultValue="1"
             android:inputType="number"
             android:key="jugadores"
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:title="Maximo de Jugadores" />
         <ListPreference
-            android:defaultValue="10"
+            android:defaultValue="0"
             android:entries="@array/tiposConexion"
             android:entryValues="@array/tiposConexionValores"
             android:key="tiposconexion"

@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,5 +68,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected( item );
+    }
+
+    public void mostrarPreferencias( View view ) {
+        /**
+         * El código comienza creando el objeto pref de la clase SharedPreferences y le asigna las preferencias definidas para la apliación. para ello le mandamos el objeto context.
+         * Se utilizan los metodos getBoolean y getString()
+         * Ambos reciben 2 parametros. El valor de key que queremos buscar y el valor asignado por defecto en caso de no encontrar esa key.
+         *
+         * getString( key, defaultValue )
+         * */
+
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences( this );
+        String s = "musica: " + pref.getBoolean("musica", true ) + ", graficos: " + pref.getString("graficos", "?");
+        // context, string a mostrar, tiempo que lo va a mostrar
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 }

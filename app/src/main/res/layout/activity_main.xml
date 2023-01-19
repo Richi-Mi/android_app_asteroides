@@ -20,6 +20,12 @@
         android:textSize="24sp" />
 
     <Button
+        android:id="@+id/button"
+        style="@style/estilo_boton"
+        android:onClick="mostrarPreferencias"
+        android:text="@string/Jugar" />
+
+    <Button
         android:id="@+id/btn_configurar"
         style="@style/estilo_boton"
         android:onClick="lanzarPreferencias"
@@ -30,11 +36,6 @@
         style="@style/estilo_boton"
         android:onClick="lanzarAcercaDe"
         android:text="@string/AcercaDe" />
-
-    <Button
-        android:id="@+id/button"
-        style="@style/estilo_boton"
-        android:text="@string/Jugar" />
 
     <Button
         android:id="@+id/btn_salir"
