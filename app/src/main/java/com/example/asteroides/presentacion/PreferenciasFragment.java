@@ -1,4 +1,4 @@
-package com.example.asteroides;
+package com.example.asteroides.presentacion;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+
+import com.example.asteroides.R;
 
 /** class PreferenciasFragment.
  * Permite crear un fragment que contiene una ventana con las opciones de preferencias definidas en un recurso XML

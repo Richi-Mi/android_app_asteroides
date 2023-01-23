@@ -1,8 +1,6 @@
-package com.example.asteroides;
+package com.example.asteroides.presentacion;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,7 +13,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.asteroides.datos.AlmacenPuntuacionesArray;
+import com.example.asteroides.modelo.AlmacenPuntuaciones;
+import com.example.asteroides.Puntuaciones;
+import com.example.asteroides.R;
+
 public class MainActivity extends AppCompatActivity {
+
+    public static AlmacenPuntuaciones almacen = new AlmacenPuntuacionesArray();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lanzarAcercaDe( View view ) {
-        Intent i = new Intent( this, AcercaDe.class );
+        Intent i = new Intent( this, AcercaDeActivity.class );
         startActivity( i );
     }
 
@@ -44,8 +49,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity( i );
     }
 
-    public void salirApp( View view ) {
-        finish(); // Metodo para cerrar la app, es equivalente al metodo de retorno.
+    public void lanzarPuntuaciones( View view ) {
+        // Metodo para cerrar la app, es equivalente al metodo de retorno.
+        //finish();
+
+        Intent i = new Intent( this, Puntuaciones.class );
+        startActivity( i );
     }
 
     @Override

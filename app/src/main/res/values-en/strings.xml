@@ -6,7 +6,7 @@
     <string name="Jugar"> Play </string>
     <string name="Configurar"> Configure </string>
     <string name="AcercaDe"> About </string>
-    <string name="Salir"> get out </string>
+    <string name="Salir"> Puntuaciones </string>
     <string name="Preferencias"> Preferences </string>
     <string name="buscar"> Search </string>
 </resources>

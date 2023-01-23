@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Asteroides"
         tools:targetApi="31">
+
+        <!-- Main Activity -->
+
         <activity
-            android:name=".MainActivity"
+            android:name=".presentacion.MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,12 +29,16 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".AcercaDe"
+            android:name=".presentacion.AcercaDeActivity"
             android:label="@string/AcercaDe"
             android:theme="@style/Theme.AppCompat.Light.Dialog"/>
         <activity
-            android:name=".PreferenciasActivity"
+            android:name=".presentacion.PreferenciasActivity"
             android:label="@string/Preferencias" />
+        <activity
+            android:name=".Puntuaciones"
+            android:label="Puntuaciones"
+            />
     </application>
 
 </manifest>
