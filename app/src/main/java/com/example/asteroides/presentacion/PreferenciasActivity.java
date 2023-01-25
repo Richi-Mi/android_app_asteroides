@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
+import com.example.asteroides.fragments.PreferenciasFragment;
+
 public class PreferenciasActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

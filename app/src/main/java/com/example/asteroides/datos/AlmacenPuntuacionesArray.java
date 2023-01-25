@@ -22,7 +22,7 @@ public class AlmacenPuntuacionesArray implements AlmacenPuntuaciones {
     }
 
     @Override
-    public List<String> listaPuntuaciones(int cantidad) {
+    public List<String> listaPuntuaciones( int cantidad ) {
         return puntuaciones;
     }
 }

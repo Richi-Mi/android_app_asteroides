@@ -19,4 +19,8 @@
         android:orderInCategory="115"
         android:title="@string/buscar"
         app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/menu_puntuaciones"
+        android:orderInCategory="10"
+        android:title="@string/Salir" />
 </menu>

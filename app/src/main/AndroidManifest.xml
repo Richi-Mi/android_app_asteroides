@@ -28,15 +28,24 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <!-- Acerca De Activity. - Cuadro de Dialogo -->
+
         <activity
             android:name=".presentacion.AcercaDeActivity"
             android:label="@string/AcercaDe"
             android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+
+        <!-- Preferencias Activity. -->
+
         <activity
             android:name=".presentacion.PreferenciasActivity"
             android:label="@string/Preferencias" />
+
+        <!-- Puntuaciones Activity -->
+
         <activity
-            android:name=".Puntuaciones"
+            android:name=".presentacion.PuntuacionesActivity"
             android:label="Puntuaciones"
             />
     </application>

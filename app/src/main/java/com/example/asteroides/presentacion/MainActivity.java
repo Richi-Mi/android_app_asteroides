@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.example.asteroides.datos.AlmacenPuntuacionesArray;
 import com.example.asteroides.modelo.AlmacenPuntuaciones;
-import com.example.asteroides.Puntuaciones;
 import com.example.asteroides.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         // Metodo para cerrar la app, es equivalente al metodo de retorno.
         //finish();
 
-        Intent i = new Intent( this, Puntuaciones.class );
+        Intent i = new Intent( this, PuntuacionesActivity.class );
         startActivity( i );
     }
 
@@ -74,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
         if ( id == R.id.acercaDe ) {
             lanzarAcercaDe( null );
             return true;
+        }
+        if ( id == R.id.menu_puntuaciones ) {
+            lanzarPuntuaciones( null );
         }
 
         return super.onOptionsItemSelected( item );

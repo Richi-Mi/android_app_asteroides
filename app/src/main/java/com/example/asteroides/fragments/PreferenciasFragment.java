@@ -1,4 +1,4 @@
-package com.example.asteroides.presentacion;
+package com.example.asteroides.fragments;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;

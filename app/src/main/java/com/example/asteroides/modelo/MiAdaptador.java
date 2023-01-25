@@ -14,7 +14,9 @@ import com.example.asteroides.R;
 
 import java.util.List;
 
-/** ¿Que es un adaptador?
+/**
+ * @apiNote
+ * ¿Que es un adaptador?
  * Un adaptador es un mecanismo estandar en android que nos permite crear una serie de vistas que han de ser mostradas dentro de un contenedor,
  * En este caso creamos el adaptador a partir de la clase RecyclerView.Adapter
  * */
@@ -47,8 +49,9 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        // Personaliza un elemento de tipo ViewHolder según su posición
+        // Personaliza un elemento de tipo ViewHolder según su posición.
         holder.titulo.setText( lista.get( position ) );
+
         switch ( Math.round( (float) Math.random() * 3 )) {
             case 0:
                 holder.icon.setImageResource( R.drawable.list_icon_asteroide );
@@ -67,21 +70,24 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> {
         return lista.size();
     }
 
-    // Esta clase contendra las vistas que queremos modificar de un elemento.
-    // En este caso 2 TextView con un ImageView.
-
     public void setOnItemClickListener( View.OnClickListener onClickListener ) {
         this.onClickListener = onClickListener;
     }
 
+    // Esta clase contendra las vistas que queremos modificar de un elemento.
+    // En este caso 2 TextView con un ImageView.
+
+
     public class ViewHolder extends RecyclerView.ViewHolder {
-        /** @apiNote Esta clase es utilizada para evitar tener que crear las vistas de cada elemento desde cero
-         * Lo que hace el ViewHolder es que contendra las 3 vistas ya creadas pero sin personalizar de esta forma se tiene el mismo viewHolder para todos.
-         * y simplemente se personaliza segun la posición.
-         * */
 
         public TextView titulo, subtitulo;
         public ImageView icon;
+
+        /** @apiNote
+         * Esta clase es utilizada para evitar tener que crear las vistas de cada elemento desde cero
+         * Lo que hace el ViewHolder es que contendra las 3 vistas ya creadas pero sin personalizar de esta forma se tiene el mismo viewHolder para todos.
+         * y simplemente se personaliza segun la posición.
+         * */
 
         ViewHolder( View itemView ) {
             super( itemView );

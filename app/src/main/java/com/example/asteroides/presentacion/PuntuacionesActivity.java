@@ -1,4 +1,4 @@
-package com.example.asteroides;
+package com.example.asteroides.presentacion;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,8 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.asteroides.R;
 import com.example.asteroides.modelo.MiAdaptador;
-import com.example.asteroides.presentacion.MainActivity;
 
 /** @author Mendoza Castañeda José Ricardo.
  *  RecyclerView.
@@ -23,7 +23,8 @@ import com.example.asteroides.presentacion.MainActivity;
  *  5) Definir como queremos que se posicionen los elementos en las vistas.
  * */
 
-public class Puntuaciones extends AppCompatActivity {
+public class PuntuacionesActivity extends AppCompatActivity {
+
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private MiAdaptador adaptador;
@@ -48,8 +49,9 @@ public class Puntuaciones extends AppCompatActivity {
                 // Nos indicaran la posicion de una vista dentro del adaptador.
                 int pos = recyclerView.getChildAdapterPosition( view );
                 String s = MainActivity.almacen.listaPuntuaciones( 10 ).get( pos );
-                Toast.makeText(Puntuaciones.this, "Selección: " + pos + " - " + s, Toast.LENGTH_LONG).show();
+                Toast.makeText(PuntuacionesActivity.this, "Selección: " + pos + " - " + s, Toast.LENGTH_LONG).show();
             }
         });
     }
+
 }
